@@ -1,0 +1,96 @@
+<!--
+    App string literals
+
+    Code:      es
+
+    Lang:      Spanish
+    Region:    Any
+ -->
+
+<resources>
+
+
+
+
+
+
+
+
+
+
+    <!-- Table prefix -->
+    <string name="tablePrefix">Mesa</string>
+
+    <!-- Error and info messages -->
+    <string name="error">ERROR</string>
+    <string name="info">INFO</string>
+    <string name="undo">Deshacer</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save_settings">Guardar</string>
+    <string name="discard_changes">Descartar</string>
+
+    <string name="error_missingIntentParams">Faltan parámetros en el intent de esta actividad.</string>
+    <string name="error_wrongTableIndex">Indice de mesa erróneo!</string>
+    <string name="error_wrongTableOrderIndex">Indice de mesa/pedido erróneo!</string>
+    <string name="error_dataEnteredNotValid">La url introducida no es válida.</string>
+
+    <string name="downloadMenu_progressTitle">Por favor espere</string>
+    <string name="downloadMenu_progressMsg">Descargando el menú del servidor...</string>
+    <string name="downloadMenu_errorMsg">Ha fallado la descarga de datos, compruebe su conexión a internet y vuelva a intentarlo.</string>
+    <string name="downloadMenu_successMsg_head">Descarga completa.\nLa carta de hoy contiene</string>
+    <string name="downloadMenu_successMsg_tail">platos.</string>
+
+    <string name="msg_downloadDialog_title">¿Volver a descargar datos del servidor?</string>
+    <string name="msg_downloadDialog_question">Toda la información actual sobre el menú, las mesas y los pedidos se perderá.</string>
+
+    <string name="msg_tableEmptied">Se ha vaciado la mesa.</string>
+    <string name="msg_savedSettings">Se han guardado los ajustes.</string>
+
+    <string name="msg_rotateMenu">Gira la pantalla para obtener una vista detallada de cada plato.</string>
+
+    <!-- Activity titles -->
+    <string name="activity_title_dishList">Seleccione un plato del menú</string>
+    <string name="activity_title_invoice">Cálculo de la cuenta</string>
+    <string name="activity_title_orderDetail">Detalles del pedido</string>
+    <string name="activity_title_settings">Ajustes</string>
+
+    <!-- Menu options -->
+    <string name="menu_txt_reloadFromServer">Recargar datos del servidor</string>
+    <string name="menu_txt_settings">Ajustes</string>
+    <string name="menu_txt_previousPage">Anterior</string>
+    <string name="menu_txt_nextPage">Siguiente</string>
+    <string name="menu_txt_calculateInvoice">Calcular la cuenta</string>
+    <string name="menu_txt_emptyTable">Vaciar la mesa</string>
+
+    <!-- UI textLabels -->
+    <string name="txt_serverSettings">Ajustes del servidor</string>
+    <string name="txt_serverUrlHeader">URL del servicio:</string>
+    <string name="txt_serverUrlHint">Si dispones de una URL alternativa (ej. http://bit.ly/WaiterDroidMenu2), escríbela aquí. O deja el cuadro vacío para la URL por defecto.</string>
+    <string name="txt_testDataHeader">Datos de prueba:</string>
+    <string name="txt_testDataCheckbox">Generar datos de prueba aleatorios después de descargar los datos del servidor.</string>
+    <string name="txt_effectiveSettings">Estos ajustes tendrán efecto la próxima vez que se descarguen los datos del servidor.</string>
+    <string name="txt_orderHeader">Orden:</string>
+    <string name="txt_orderNotes">Notas adicionales:</string>
+    <string name="txt_orderNotesHint">Escribe aquí las notas adicionales para este pedido, o déjalo en blanco si no hay ninguna nota adicional.</string>
+    <string name="txt_amount">Cant.</string>
+    <string name="txt_price">Precio</string>
+    <string name="txt_dish">Plato</string>
+    <string name="txt_subtotal">Subtotal</string>
+    <string name="txt_tax">IVA</string>
+    <string name="txt_total">TOTAL</string>
+    <string name="txt_tableHasNoOrders">Esta mesa no ha ordenado ningún plato aún.</string>
+    <string name="txt_noOrders">No tiene ningún pedido</string>
+    <string name="txt_orders">pedidos</string>
+
+    <!-- Random special requests (for debugging) -->
+    <string name="txt_request_01">Con sacarina.</string>
+    <string name="txt_request_02">Agitado, no batido.</string>
+    <string name="txt_request_03">Con dos piedras de hielo y en copa ancha.</string>
+    <string name="txt_request_04">Que esté bien hecho, el cliente detesta la carne cruda.</string>
+    <string name="txt_request_05">Servido a la mitad en dos platos, para los niños.</string>
+    <string name="txt_request_06">Sin cebolla.</string>
+    <string name="txt_request_07">Sin mayonesa.</string>
+    <string name="txt_request_08">Con dos gotas de brandy.</string>
+
+</resources>

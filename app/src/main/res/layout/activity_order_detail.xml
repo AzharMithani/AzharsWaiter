@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_main" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:isScrollContainer="true"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/layoutButtons"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtOrderPos"
+                    android:text="Order Pos:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtDishName"
+                    android:text="Dish Name:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/imgDishImage"
+                    android:layout_height="225dp"
+                    android:layout_width="225dp"
+                    android:background="@android:color/white"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="false"
+                    android:isScrollContainer="false"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_defaultplaceholder"/>
+
+                <TextView
+                    android:text="Dish Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDishDescription"
+                    android:paddingBottom="10dp"/>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listAllergens"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:text="Notes:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCaptionNotes"
+                    android:paddingBottom="10dp"/>
+
+                <EditText
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:id="@+id/txtNotes"
+                    android:layout_height="100dp"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="top"
+                    android:hint="@string/txt_orderNotesHint"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutButtons"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:text="@string/cancel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="30dp">
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnOk"
+                android:text="@string/accept"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

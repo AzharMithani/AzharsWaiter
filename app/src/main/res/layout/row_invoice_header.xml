@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtTableName"
+        android:text="Table Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/txtInvoiceDate"
+        android:text="Date and Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtDishCountHeader"
+            android:text="Count"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/txtDishPriceHeader"
+            android:text="Price"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/txtDishNameHeader"
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:layout_toLeftOf="@+id/txtDishPriceHeader"
+            android:layout_toRightOf="@+id/txtDishCountHeader"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

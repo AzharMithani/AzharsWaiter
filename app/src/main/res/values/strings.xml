@@ -1,0 +1,96 @@
+<!--
+    App string literals (default file)
+
+    Code:      en
+
+    Lang:      English
+    Region:    Any
+ -->
+
+<resources>
+
+    <!-- Non-translatable strings -->
+    <string name="app_name" translatable="false">Azhar\'s Waiter</string>
+
+    <string name="default_url" translatable="false">"http://alacrityfest.org/a.json"</string>
+
+    <string name="prefs_urlKey" translatable="false">Server URL</string>
+    <string name="prefs_randomDataKey" translatable="false">Random Data</string>
+
+
+    <!-- Table prefix -->
+    <string name="tablePrefix">Table</string>
+
+    <!-- Error and info messages -->
+    <string name="error">ERROR</string>
+    <string name="info">INFO</string>
+    <string name="undo">Undo</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_settings">Save</string>
+    <string name="discard_changes">Discard</string>
+
+    <string name="error_missingIntentParams">Missing data provided by the intent.</string>
+    <string name="error_wrongTableIndex">Wrong table index!</string>
+    <string name="error_wrongTableOrderIndex">Wrong table/order index!</string>
+    <string name="error_dataEnteredNotValid">The url you entered is not valid.</string>
+
+    <string name="downloadMenu_progressTitle">Please wait</string>
+    <string name="downloadMenu_progressMsg">Downloading menu from server...</string>
+    <string name="downloadMenu_errorMsg">The download has failed, please check your internet connection and try again.</string>
+    <string name="downloadMenu_successMsg_head">"Download complete.\nToday's menu includes"</string>
+    <string name="downloadMenu_successMsg_tail">dishes.</string>
+
+    <string name="msg_downloadDialog_title">Reload data from server?</string>
+    <string name="msg_downloadDialog_question">All current data about menu, tables and orders will be lost.</string>
+
+    <string name="msg_tableEmptied">The table has been reset.</string>
+    <string name="msg_savedSettings">The settings have been saved.</string>
+
+    <string name="msg_rotateMenu">Rotate the screen to get a detailed view of each dish.</string>
+
+    <!-- Activity titles -->
+    <string name="activity_title_dishList">Select a dish from the menu</string>
+    <string name="activity_title_invoice">Invoice preview</string>
+    <string name="activity_title_orderDetail">Order detail</string>
+    <string name="activity_title_settings">Settings</string>
+
+    <!-- Menu options -->
+    <string name="menu_txt_reloadFromServer">Reload data from server</string>
+    <string name="menu_txt_settings">Settings</string>
+    <string name="menu_txt_previousPage">Previous</string>
+    <string name="menu_txt_nextPage">Next</string>
+    <string name="menu_txt_calculateInvoice">Calculate invoice</string>
+    <string name="menu_txt_emptyTable">Empty the table</string>
+
+    <!-- UI textLabels -->
+    <string name="txt_serverSettings">Server settings</string>
+    <string name="txt_serverUrlHeader">Service URL:</string>
+    <string name="txt_serverUrlHint">If you have an alternate url (e.g. http://bit.ly/WaiterDroidMenu2), write it here. Or leave it blank for the default url.</string>
+    <string name="txt_testDataHeader">Test data:</string>
+    <string name="txt_testDataCheckbox">Generate random test data after downloading information from the server.</string>
+    <string name="txt_effectiveSettings">Designed and Developed by Azhar Mithani</string>
+    <string name="txt_orderHeader">Order:</string>
+    <string name="txt_orderNotes">Additional notes:</string>
+    <string name="txt_orderNotesHint">Write here the additional notes for this order, or leave it blank if there are no special requests.</string>
+    <string name="txt_amount">Amnt.</string>
+    <string name="txt_price">Price</string>
+    <string name="txt_dish">Dish</string>
+    <string name="txt_subtotal">Subtotal</string>
+    <string name="txt_tax">GST</string>
+    <string name="txt_total">TOTAL</string>
+    <string name="txt_tableHasNoOrders">This table has not ordered any dish yet.</string>
+    <string name="txt_noOrders">No orders</string>
+    <string name="txt_orders">orders</string>
+
+    <!-- Random special requests (for debugging) -->
+    <string name="txt_request_01">With saccharine.</string>
+    <string name="txt_request_02">Shaken, not stirred.</string>
+    <string name="txt_request_03">On the rocks.</string>
+    <string name="txt_request_04">Must be overcooked, the client hates saignant meat.</string>
+    <string name="txt_request_05">Split into two dishes, for the kids.</string>
+    <string name="txt_request_06">Without onion.</string>
+    <string name="txt_request_07">Without mayonnaise.</string>
+    <string name="txt_request_08">With a few drops of brandy.</string>
+
+</resources>

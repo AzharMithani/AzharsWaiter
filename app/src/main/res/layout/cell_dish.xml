@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_marginTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#e9e3b2"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/foodBox"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/priceBox"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgDish"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_defaultplaceholder"/>
+
+                <TextView
+                    android:id="@+id/txtDishName"
+                    android:text="Dish Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TableLayout
+                    android:id="@+id/allergenTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                </TableLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/priceBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_price_box"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDishPrice"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:fontFamily="monospace"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgAllergenImage"
+            android:background="@android:color/white"
+            android:scaleType="fitXY"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="left"
+            android:padding="7dp"
+            android:text="Allergen Name"
+            android:id="@+id/txtAllergenName"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

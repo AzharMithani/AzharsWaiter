@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_previousPage" android:title="@string/menu_txt_previousPage" android:icon="@drawable/ic_arrowleft" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_nextPage" android:title="@string/menu_txt_nextPage" android:icon="@drawable/ic_arrowright" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_calculateInvoice" android:title="@string/menu_txt_calculateInvoice"/>
+    <item android:id="@+id/menu_emptyTable" android:title="@string/menu_txt_emptyTable"/>
+
+</menu>

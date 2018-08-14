@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_main" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:isScrollContainer="true"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/layoutButtons"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtServerSettingsTitle"
+                    android:text="@string/txt_serverSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"/>
+
+                <TextView
+                    android:id="@+id/txtUrlHeader"
+                    android:text="@string/txt_serverUrlHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtUrlBox"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_width="match_parent"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="top"
+                    android:hint="@string/txt_serverUrlHint"
+                    android:layout_height="100dp"/>
+
+                <TextView
+                    android:id="@+id/txtTestDataHeader"
+                    android:text="@string/txt_testDataHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <CheckBox android:id="@+id/chkRandomData"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/txt_testDataCheckbox"
+                          android:checked="false"
+                          android:enabled="true"/>
+
+                <TextView
+                    android:id="@+id/txtEffectiveSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/txt_effectiveSettings"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:id="@+id/layoutButtons"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="70dp">
+
+            <Button
+                android:id="@+id/btnDiscard"
+                android:text="@string/discard_changes"
+                android:layout_height="50dp"
+                android:layout_width="150dp"/>
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="30dp">
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:text="@string/save_settings"
+                android:layout_width="150dp"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
